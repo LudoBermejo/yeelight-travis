@@ -30,4 +30,4 @@ install:
 test:
 - time yarn test
 deploy:
-- bash _scripts/deploy.sh
+- bash travis_scritps/deploy.sh

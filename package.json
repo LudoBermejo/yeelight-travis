@@ -18,6 +18,7 @@
     "jest": "^18.0.0"
   },
   "scripts": {
+    "run": "node api.js",
     "test": "jest --coverage"
   }
 }

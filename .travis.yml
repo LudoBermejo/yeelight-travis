@@ -23,10 +23,6 @@ install:
 - bash travis_scripts/install.sh
 script:
 - time yarn test
-deploy:
- provider: script
-  script: ./travis_scritps/travis-deploy.sh
-  on:
-    branch: master
-  skip_cleanup: true
+after_success:
+- bash travis_scripts/deploy.sh
 

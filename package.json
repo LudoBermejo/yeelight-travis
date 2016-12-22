@@ -11,6 +11,7 @@
     "express-graphql": "^0.6.1",
     "graphql": "^0.8.2",
     "jest-cli": "^18.0.0",
+    "winston": "^2.3.0",
     "yeelight-wifi": "^1.1.1"
   },
   "devDependencies": {

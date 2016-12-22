@@ -26,9 +26,7 @@ function connect() {
   app.listen(4000, () => winston.log('info', 'Now browse to localhost:4000/graphql'));
 }
 
-app.configure(() => {
-  app.use(errorHandler);
-});
+app.use(errorHandler);
 
 module.exports = {
   connect,

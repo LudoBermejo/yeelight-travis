@@ -1,6 +1,5 @@
 #!/bin/bash
 rm -rf .gitignore
-rm -rf .travis.yml
 set -x # Show the output of the following commands (useful for debugging)
 # Import the SSH deployment key
 openssl aes-256-cbc -K $encrypted_97b3e9460dc1_key -iv $encrypted_97b3e9460dc1_iv -in deploy-key.enc -out deploy-key -d

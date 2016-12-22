@@ -25,6 +25,6 @@ script:
 - time yarn test
 deploy:
   provider: script
-  script: travis_scripts/deploy.sh
+  script: sh ./travis_scripts/deploy.sh
   skip_cleanup: true
 

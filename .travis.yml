@@ -12,7 +12,7 @@ notifications:
     on_failure: never
 branches:
   only:
-    - - master
+    - master
 node_js:
   - "6"
 before_install:

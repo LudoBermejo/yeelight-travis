@@ -13,7 +13,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
     rm .gitignore
     rm .travis.yml
     rm -rf travis_scripts
-    git add .
+    git add --all
     git commit -m "Deploy"
     git push --force deploy master
     ls -la

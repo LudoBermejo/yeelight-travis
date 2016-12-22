@@ -10,7 +10,6 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
     git remote add deploy "deploy@ludobermejo.es:/var/www/remotes/yeelight-server"
     git config user.name "Travis CI"
     git config user.email "ludobermejo+travisCI@gmail.com"
-    rm .gitignore
     rm .travis.yml
     rm -rf travis_scripts
     git add --all

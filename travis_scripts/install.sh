@@ -9,3 +9,4 @@ eval `ssh-agent -s` #start shh agent
 ssh-add ~/.ssh/id_rsa
 yarn
 yarn install
+ls -la

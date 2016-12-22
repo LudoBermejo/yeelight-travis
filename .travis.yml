@@ -20,6 +20,9 @@ before_install:
   -in deploy-key.enc -out deploy-key -d
 - time npm i -g yarn --cache-min 999999999
 install:
-- bash travis_scritps/install.sh
-test:
+- bash travis_scripts/install.sh
+script:
 - time yarn test
+after_success:
+- bash travis_scripts/deploy.sh
+

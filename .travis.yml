@@ -20,4 +20,4 @@ before_install:
 install:
   - time yarn
 script:
-  - time yarn start build && time yarn start deploy
+  - time yarn test

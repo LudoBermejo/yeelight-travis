@@ -24,10 +24,7 @@ install:
 script:
 - time yarn test
 before_deploy:
-  provider: script
-  script: sh ./travis_scripts/before_deploy.sh
-  on:
-      branch: master
+- rm .gitignore
 deploy:
   provider: script
   script: sh ./travis_scripts/deploy.sh

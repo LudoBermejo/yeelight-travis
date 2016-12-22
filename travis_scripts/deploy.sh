@@ -5,9 +5,9 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
     cd _site
     git init
 
-    git remote add deploy "deploy@kjaermaxi.me:/var/www/kjaermaxi.me"
+    git remote add deploy "deploy@ludobermejo.es:/var/www/remotes/yeelight-server"
     git config user.name "Travis CI"
-    git config user.email "maxime.kjaer+travisCI@gmail.com"
+    git config user.email "ludobermejo+travisCI@gmail.com"
 
     git add .
     git commit -m "Deploy"

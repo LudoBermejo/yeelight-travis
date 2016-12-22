@@ -23,8 +23,6 @@ install:
 - bash travis_scripts/install.sh
 script:
 - time yarn test
-before_deploy:
-- echo "" > .gitignore
 deploy:
 - bash travis_scripts/deploy.sh
 

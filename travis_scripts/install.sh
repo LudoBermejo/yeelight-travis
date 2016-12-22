@@ -9,8 +9,5 @@ eval `ssh-agent -s` #start shh agent
 ssh-add ~/.ssh/id_rsa
 yarn
 yarn install
-rm .gitignore
-rm .travis.yml
-rm -rf travis_scripts
 
 ls -la

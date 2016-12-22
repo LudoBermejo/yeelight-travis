@@ -1,4 +1,4 @@
-const yeelightController = require('./src/yeelight/yeelight');
+const yeelightController = require('./src/yeelight/yeelightController');
 const graphQL = require('./src/graphQL/graphQL');
 const winston = require('winston');
 

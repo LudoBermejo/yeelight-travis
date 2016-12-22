@@ -9,8 +9,6 @@ git init
 git remote add deploy "deploy@ludobermejo.es:/var/www/remotes/yeelight-server"
 git config user.name "Travis CI"
 git config user.email "ludobermejo+travisCI@gmail.com"
-rm .travis.yml
-rm -rf travis_scripts
 git add --all
 git commit -m "Deploy"
 git push --force deploy master

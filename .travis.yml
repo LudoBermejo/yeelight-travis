@@ -24,5 +24,7 @@ install:
 script:
 - time yarn test
 deploy:
-- bash travis_scripts/deploy.sh
+  provider: script
+  script: travis_scripts/deploy.sh
+  skip_cleanup: true
 

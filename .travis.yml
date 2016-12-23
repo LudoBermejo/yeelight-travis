@@ -24,7 +24,7 @@ install:
 script:
 - time yarn test
 before_deploy:
-  - git add -f node_modules/
+  - rm -rf .git && rm -rf .gitignore
 deploy:
   provider: script
   script: sh ./travis_scripts/deploy.sh

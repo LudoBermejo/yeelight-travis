@@ -1,3 +1,2 @@
-const graphQL = require('./src/graphQL/graphQL');
-
-graphQL.connect();
+const webhookReceiver = require('./src/webhookPublisher/webhookPublisher');
+webhookReceiver();

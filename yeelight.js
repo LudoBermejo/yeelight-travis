@@ -1,3 +1,3 @@
-const yeelightController = require('./src/yeelight/yeelightController');
+const webhookSubscriber = require('./src/webhookSubscriber/webhookSubscriber');
 
-yeelightController.connect();
+webhookSubscriber.init();

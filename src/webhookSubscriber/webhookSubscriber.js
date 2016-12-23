@@ -1,12 +1,14 @@
 const faye = require('faye');
 const yeelightController = require('./../yeelight/yeelightController');
 
-const client = new faye.Client('http://localhost:8000/faye');
+const client = new faye.Client('http://ludobermejo.es:9100/faye');
 
 function subscribe() {
-  return client.subscribe('/webhookDispatched', (message) => {
+  const subscription = client.subscribe('/webhookDispatched', (message) => {
     console.log(message);
+    yeelightController.toggle();
   });
+  console.log(subscription);
 }
 function init() {
   yeelightController.connect()

@@ -4,7 +4,8 @@ const Promise = require('bluebird');
 
 const arrayLightBulb = [];
 function toggle(lightBulb) {
-  lightBulb.toggle()
+  const mylightBulb = lightBulb || arrayLightBulb[0];
+  mylightBulb.toggle()
     .then(() => {
       winston.log('debug', 'toggled');
     })

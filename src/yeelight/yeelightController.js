@@ -19,7 +19,6 @@ function turnOn(lightBulb) {
   mylightBulb.turnOn();
 }
 
-
 function start(lightBulb) {
   const mylightBulb = lightBulb || arrayLightBulb[0];
   mylightBulb.turnOn();
@@ -36,7 +35,6 @@ function error(lightBulb) {
   const mylightBulb = lightBulb || arrayLightBulb[0];
   mylightBulb.setRGB('#FF0000');
 }
-
 
 function connect() {
   const yeelightSearch = new YeelightSearch();

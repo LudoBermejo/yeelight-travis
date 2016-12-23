@@ -8,18 +8,13 @@ function subscribe() {
     const data = JSON.parse(message.text);
     switch (data.state) {
       case 'started':
-        yeelightController.turnOn();
-        yeelightController.setRGB('#F3F781');
+        yeelightController.start();
         break;
       case 'passed':
-        yeelightController.turnOn();
-        yeelightController.setRGB('#00FF00');
-        setTimeout(() => yeelightController.turnOff(), 5000);
+        yeelightController.complete();
         break;
       case 'broken':
-      case 'error':
-        yeelightController.turnOn();
-        yeelightController.setRGB('#FF0000');
+      case 'error':yeelightController.error();
         break;
       default:
         break;

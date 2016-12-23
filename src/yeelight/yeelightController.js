@@ -13,6 +13,31 @@ function toggle(lightBulb) {
       winston.log('error', `received some error: ${err}`);
     });
 }
+
+function turnOn(lightBulb) {
+  const mylightBulb = lightBulb || arrayLightBulb[0];
+  mylightBulb.turnOn();
+}
+
+
+function start(lightBulb) {
+  const mylightBulb = lightBulb || arrayLightBulb[0];
+  mylightBulb.turnOn();
+  mylightBulb.setRGB('#F3F781');
+}
+
+function complete(lightBulb) {
+  const mylightBulb = lightBulb || arrayLightBulb[0];
+  mylightBulb.setRGB('#00FF00');
+  setTimeout(() => mylightBulb.turnOff(), 5000);
+}
+
+function error(lightBulb) {
+  const mylightBulb = lightBulb || arrayLightBulb[0];
+  mylightBulb.setRGB('#FF0000');
+}
+
+
 function connect() {
   const yeelightSearch = new YeelightSearch();
 
@@ -30,4 +55,8 @@ function connect() {
 module.exports = {
   connect,
   toggle,
+  start,
+  complete,
+  error,
+  turnOn,
 };

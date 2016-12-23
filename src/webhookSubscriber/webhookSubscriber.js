@@ -8,7 +8,6 @@ function subscribe() {
     console.log(message);
     yeelightController.toggle();
   });
-  console.log(subscription);
 }
 function init() {
   yeelightController.connect()

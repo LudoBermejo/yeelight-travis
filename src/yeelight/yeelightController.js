@@ -23,7 +23,7 @@ function turnOn(lightBulb) {
 function start(lightBulb) {
   const mylightBulb = lightBulb || arrayLightBulb[0];
   mylightBulb.turnOn();
-  mylightBulb.setRGB('#f76a11');
+  mylightBulb.setRGB('#F3F781');
 }
 
 function complete(lightBulb) {

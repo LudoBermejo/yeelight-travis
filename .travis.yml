@@ -22,7 +22,7 @@ before_install:
 install:
 - bash travis_scripts/install.sh
 script:
-- time code/yarn test
+- time yarn test /code
 before_deploy:
   - rm -rf .git && rm -rf .gitignore
 deploy:

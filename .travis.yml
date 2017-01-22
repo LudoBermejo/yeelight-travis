@@ -27,7 +27,7 @@ before_deploy:
   - rm -rf .git && rm -rf .gitignore
 deploy:
   provider: script
-  script: sh ./travis_scripts/deploy.sh
+  script: cd .. && sh ./travis_scripts/deploy.sh
   skip_cleanup: true
   on:
       branch: master

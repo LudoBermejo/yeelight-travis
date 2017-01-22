@@ -7,5 +7,6 @@ chmod 600 deploy-key
 mv deploy-key ~/.ssh/id_rsa
 eval `ssh-agent -s` #start shh agent
 ssh-add ~/.ssh/id_rsa
+cd code
 yarn
 yarn install
